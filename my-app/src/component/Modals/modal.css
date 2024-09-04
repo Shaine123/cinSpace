@@ -1,0 +1,104 @@
+.bg{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.226);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+}
+
+.headers{
+   background-color: var(--PRIMARY);
+   color: white;
+   height: 50px;
+   border-radius: 5px 5px 0 0;
+   position: relative;
+   padding: 10px;
+}
+
+.closeModal{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+}
+.closeModal img{
+  height: 20px;
+  width: auto;
+}
+.editModal-container,.uploadmodal-container{
+   background-color: white;
+   position: absolute;
+   z-index: 2;
+   min-width: 350px;
+   height: auto;
+   min-height: 200px;
+   border-radius: 5px;
+   top: 15vh;
+   left: 40vw;
+}
+.editModal-container .headers{
+   position: relative;
+   padding: 10px;
+}
+.editModal-container .headers .editModal-title{
+  font-size: 25px;
+}
+
+
+
+.editModal-container .footers .editModal-btn{
+  background-color: rgb(87, 195, 87);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0.3rem 1.7rem;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.editModal-container .contents{
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 20px;
+  padding: 15px 0;
+  padding-left: 20px;
+}
+
+.editModal-container .contents input{
+  border: none;
+  height: 40px;
+  width: 90%;
+  padding-left: 15px;
+}
+
+.uploadmodal-container{
+   min-width: 430px;
+   min-height: 180px;
+}
+
+.upload-form{
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.upload-form .upload-input{
+  border: 1px solid var(--PRIMARY);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.upload-form .upload-btn{
+  background-color: var(--SECONDARY);
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+  margin-left: 5px;
+  cursor: pointer;
+}

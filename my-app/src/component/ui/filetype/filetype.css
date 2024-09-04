@@ -1,0 +1,63 @@
+.fileType-container{
+  border: 2px solid rgba(211, 211, 211, 0.416);
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 5px;
+  position: relative;
+}
+.fileType-container:hover{
+  background-color: #0fa3b116;
+  border: 2px solid var(--PRIMARY);
+  color: var(--PRIMARY);
+}
+
+.fileType-container .dropDownMenu{
+   width: 130px;
+   height: 10px;
+   background-color: white;
+   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.21);
+   position: absolute;
+   z-index: 3;
+   top: 35px;
+   right: -10px;
+   border-radius: 5px;
+   /* transition: all ease-in-out 0.5s; */
+}
+
+.fileType-container .fileType-info{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fileType-container .fileType-info img{
+  height: 40px;
+  width: auto;
+}
+.fileType-container .fileType-info .file-details{
+  display: flex;
+  flex-direction: column;
+}
+.fileType-container .fileType-info .file-details p{
+  font-size: 12px;
+}
+.fileType-container .fileType-info .file-details p:nth-child(2){
+  display: inline;
+  color: gray;
+  font-size: 10px;
+}
+
+.fileType-container .action-btn{
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+.fileType-container .action-btn img{
+  width: 20px;
+  height: auto;
+}

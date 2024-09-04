@@ -1,0 +1,195 @@
+.storage-container{
+  padding: 30px;
+  height: auto;
+  min-height: 100vh;
+}
+
+.storage-container .control-section{
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.storage-container .control-section .storage-bar{
+ height: 2px;
+ background-color: var(--PRIMARY);
+ width: 50%;
+ border-radius: 40px;
+}
+
+.storage-container .control-section .controls{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.storage-container .control-section .controls .indicator{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.storage-container .control-section .controls .indicator h2{
+  font-weight: 500;
+  font-size: 20px;
+}
+.storage-container .control-section .controls .indicator p{
+ color: gray;
+ font-size: 15px;
+}
+.storage-container .control-section .controls .upload-btn{
+  height: 45px;
+  padding: 0 15px;
+  border: none;
+  background-color: var(--PRIMARY);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.storage-container .control-section .controls .upload-btn img{
+ height: 15px;
+ width: auto;
+}
+
+
+.storage-container .sub-container{
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 15px; 
+  height: auto;
+}
+
+.storage-container .sub-container .box-1{
+  flex: 1;
+  background-color: white;
+  border-radius: 5px;
+  height: 350px;
+}
+
+.storage-container .sub-container .box-1 .folder-container{
+ display: flex;
+ flex-direction: column;
+
+}
+.storage-container .sub-container .box-1 .folder-container
+.title{
+   font-weight: 500;
+   font-size: 17px;
+   padding: 15px;
+   border-bottom: 1px solid lightgray;
+ }
+ .storage-container .sub-container .box-1 .folder-container
+.folder-items{
+   padding: 15px;
+ }
+ .storage-container .sub-container .box-1 .folder-container
+.folder-items .folder-item{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   border: 2px solid rgba(211, 211, 211, 0.416);
+   padding: 10px;
+   padding-left: 15px;
+   margin: 10px 0;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ .storage-container .sub-container .box-1 .folder-container
+ .folder-items .folder-item img{
+    width: 45px;
+    height: auto;
+  }
+  .storage-container .sub-container .box-1 .folder-container
+ .folder-items .folder-item .folderitem-name{
+    font-size: 14px;
+  }
+.storage-container .sub-container .box-2{
+  flex: 3;
+  height: auto;
+  min-height: calc(100vh - 150px);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.storage-container .sub-container .box-1 .folder-container
+.folder-items .folder-item:hover{
+  background-color: #0fa3b116;
+  border: 2px solid var(--PRIMARY);
+  color: var(--PRIMARY);
+ }
+
+ .storage-container .sub-container .box-2 
+.title{
+   font-weight: 500;
+   font-size: 17px;
+   padding: 15px;
+   border-bottom: 1px solid lightgray;
+ }
+
+ .storage-container .sub-container .box-2 .filescard-container{
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ .search-form  {
+   padding: 20px;
+ }
+
+ .search-form .input-container{
+   position: relative;
+ }
+ .search-form  .input-container .search-comp{
+    border: 1px solid rgba(128, 128, 128, 0.256);
+    background-color: rgba(237, 237, 237, 0.313);
+    height: 35px;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 45px;
+ }
+ .search-form  .input-container img{
+   position: absolute;
+   left: 10px;
+   top: 5px;
+   height: 25px;
+   width: auto;
+ }
+ .search-form  button{
+   display: none;
+ }
+ @media only screen and (max-width: 600px) 
+ {
+  .storage-container .control-section .upload-btn{
+    height: 45px;
+    padding: 0 15px;
+    border: none;
+    background-color: var(--PRIMARY);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .storage-container .control-section .upload-btn p{
+   display: none;
+  }
+
+  .storage-container{
+    padding: 10px;
+  }
+
+  .storage-container .sub-container{
+    flex-direction: column;
+  }  
+
+  .storage-container .control-section .controls .indicator h2{
+    font-size: 15px;
+  }
+  .storage-container .control-section .controls .indicator p{
+   font-size: 12px;
+  }
+
+
+ }

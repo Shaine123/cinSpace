@@ -1,0 +1,118 @@
+.login-bg{
+   width: 100vw;
+   height: auto;
+   min-height: 100vh;
+   background-image: radial-gradient(circle at 52% 84%, rgba(194, 194, 194,0.06) 0%, rgba(194, 194, 194,0.06) 18%,transparent 18%, transparent 100%),radial-gradient(circle at 38% 97%, rgba(239, 239, 239,0.06) 0%, rgba(239, 239, 239,0.06) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 86% 17%, rgba(210, 210, 210,0.06) 0%, rgba(210, 210, 210,0.06) 61%,transparent 61%, transparent 100%),radial-gradient(circle at 6% 48%, rgba(91, 91, 91,0.06) 0%, rgba(91, 91, 91,0.06) 27%,transparent 27%, transparent 100%),radial-gradient(circle at 27% 63%, rgba(86, 86, 86,0.06) 0%, rgba(86, 86, 86,0.06) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 2% 91%, rgba(182, 182, 182,0.06) 0%, rgba(182, 182, 182,0.06) 29%,transparent 29%, transparent 100%),linear-gradient(90deg, rgb(203, 171, 120),rgb(227, 87, 5));
+   padding-top: 5vh;
+}
+
+.login-container{
+  background-color: white;
+  max-width: 35vw;
+  min-height: 60vh;
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px 40px;
+}
+.login-title{
+   font-weight: 600;
+   font-size: 30px;
+   text-align: center;
+}
+.login-subtitle{
+   font-size: 15px;
+   text-align: center;
+}
+
+.login-container form{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 60px;
+}
+.login-container form .input-container{ 
+  display: flex;
+  flex-direction: column;
+}
+.login-container form .input-container label{ 
+  font-size: 13px;
+}
+.login-container form .input-container input{ 
+   height: 45px;
+   padding-left: 10px;
+   border: none;
+   border-bottom: 1px solid rgba(211, 211, 211, 0.477);
+}
+
+.login-container form .login-btn{ 
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 25px;
+  background-color: var(--PRIMARY);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+.logo-container{
+   max-width: 200px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.logo-container .logo-img{ 
+  height: 90px;
+  width: 90px;  
+}
+.logo-container .logo-img img{ 
+  height: 100%;
+  width: 100%;
+}
+.logo-container .logo-title{
+  font-family: "Playwrite AR", cursive;
+  color: white;
+}
+.error-message{
+  font-size: 10px;
+  color: red;
+  margin-top: 2px;
+}
+
+.signup-p{
+  text-align: center;
+  margin-top: 20px;
+}
+.signup-p .navlink-p{
+   color: var(--SECONDARY);
+}
+
+.thirdparty-logins{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-top: 30px;
+}
+
+.thirdparty-logins .thirdparty-text{
+  color: gray;
+}
+
+.thirdparty-logins .google-btn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.thirdparty-logins .google-btn img{
+  width: 20px;
+  height: auto;
+}
+
+.thirdparty-logins .google-btn p{
+  color: rgb(62, 211, 62);
+  font-weight: 600;
+}
